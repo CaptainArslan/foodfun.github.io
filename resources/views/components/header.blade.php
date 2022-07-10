@@ -19,12 +19,12 @@
                             <li class="active"><a href="{{url('/index')}}">home</a></li>
                             <li><a href="{{url('/about')}}">about</a></li>
                             <li><a href="{{url('/menu')}}">menu</a></li>
-                            <!-- <li><a href="#">blog</a>
-                            <ul class="sub-menu">
-                                <li><a href="blog-home.html">Blog Home</a></li>
-                                <li><a href="blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li> -->
+                            <li><a href="{{url('/blog')}}">blog</a>
+                                <!-- <ul class="sub-menu">
+                                    <li><a href="blog-home">Blog Home</a></li>
+                                    <li><a href="blog-details">Blog Details</a></li>
+                                </ul> -->
+                            </li>
                             <li><a href="{{url('/contact-us')}}">contact</a></li>
                             <!-- <li><a href="elements.html">Elements</a></li> -->
                         </ul>
