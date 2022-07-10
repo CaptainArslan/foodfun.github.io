@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title',"Home Food Fun")
+@section('title',"Blog Detail | Food Fun")
 @section('body-content')
 <!-- Preloader Starts -->
 <!-- <div class="preloader">
@@ -17,9 +17,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1><i>Our Blog</i></h1>
-                <a href="index.html">home</a>
+                <a href="index">home</a>
                 <span class="mx-2">/</span>
-                <a href="blog-details.html">blog details</a>
+                <a href="blog-details">blog details</a>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
                 <div class="single-post row">
                     <div class="col-lg-12">
                         <div class="feature-img">
-                            <img class="img-fluid" src="assets/images/blog-details/feature-img1.jpg" alt="">
+                            <img class="img-fluid" src="{{asset('/images/blog-details/feature-img1.jpg')}}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-3  col-md-3">
@@ -77,10 +77,10 @@
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <img class="img-fluid" src="assets/images/blog-details/post-img1.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('/images/blog-details/post-img1.jpg')}}" alt="">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="assets/images/blog-details/post-img2.jpg" alt="">
+                                <img class="img-fluid" src="{{asset('/images/blog-details/post-img2.jpg')}}" alt="">
                             </div>
                             <div class="col-lg-12 my-4">
                                 <p>
@@ -99,7 +99,7 @@
                         <div class="single-comment justify-content-between d-flex">
                             <div class="user justify-content-between d-flex">
                                 <div class="thumb">
-                                    <img src="assets/images/blog-details/c1.jpg" alt="">
+                                    <img src="{{asset('/images/blog-details/c1.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">
                                     <h5><a href="#">Emilly Blunt</a></h5>
@@ -118,7 +118,7 @@
                         <div class="single-comment justify-content-between d-flex">
                             <div class="user justify-content-between d-flex">
                                 <div class="thumb">
-                                    <img src="assets/images/blog-details/c2.jpg" alt="">
+                                    <img src="{{asset('/images/blog-details/c2.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">
                                     <h5><a href="#">Elsie Cum</a></h5>
@@ -137,7 +137,7 @@
                         <div class="single-comment justify-content-between d-flex">
                             <div class="user justify-content-between d-flex">
                                 <div class="thumb">
-                                    <img src="assets/images/blog-details/c3.jpg" alt="">
+                                    <img src="{{asset('/images/blog-details/c3.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">
                                     <h5><a href="#">Annie Steph</a></h5>
@@ -156,7 +156,7 @@
                         <div class="single-comment justify-content-between d-flex">
                             <div class="user justify-content-between d-flex">
                                 <div class="thumb">
-                                    <img src="assets/images/blog-details/c4.jpg" alt="">
+                                    <img src="{{asset('/images/blog-details/c4.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">
                                     <h5><a href="#">Maria Luna</a></h5>
@@ -175,7 +175,7 @@
                         <div class="single-comment justify-content-between d-flex">
                             <div class="user justify-content-between d-flex">
                                 <div class="thumb">
-                                    <img src="assets/images/blog-details/c5.jpg" alt="">
+                                    <img src="{{asset('/images/blog-details/c5.jpg')}}" alt="">
                                 </div>
                                 <div class="desc">
                                     <h5><a href="#">Ina Hayes</a></h5>
@@ -213,157 +213,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="blog_right_sidebar">
-                    <aside class="single_sidebar_widget search_widget">
-                        <div class="input-group">
-                            <input type="text" class="form-control">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-                            </span>
-                        </div><!-- /input-group -->
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget author_widget">
-                        <img class="author_img rounded-circle" src="assets/images/blog/author.png" alt="">
-                        <h5>Charlie Barber</h5>
-                        <p>Senior blog writer</p>
-                        <div class="social_icon">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
-                            <a href="#"><i class="fa fa-behance"></i></a>
-                        </div>
-                        <p>Boot camps have its supporters andit sdetractors. Some people do not understand why you should have to spend money on boot camp when you can get. Boot camps have itssuppor ters andits detractors.</p>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget popular_post_widget">
-                        <h4 class="widget_title">Popular Posts</h4>
-                        <div class="media post_item">
-                            <img src="assets/images/blog/popular-post/post1.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="blog-details.html">
-                                    <h5>Space The Final Frontier</h5>
-                                </a>
-                                <p>02 Hours ago</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="assets/images/blog/popular-post/post2.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="blog-details.html">
-                                    <h5>The Amazing Hubble</h5>
-                                </a>
-                                <p>02 Hours ago</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="assets/images/blog/popular-post/post3.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="blog-details.html">
-                                    <h5>Astronomy Or Astrology</h5>
-                                </a>
-                                <p>03 Hours ago</p>
-                            </div>
-                        </div>
-                        <div class="media post_item">
-                            <img src="assets/images/blog/popular-post/post4.jpg" alt="post">
-                            <div class="media-body">
-                                <a href="blog-details.html">
-                                    <h5>Asteroids telescope</h5>
-                                </a>
-                                <p>01 Hours ago</p>
-                            </div>
-                        </div>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget ads_widget">
-                        <a href="#"><img class="img-fluid" src="assets/images/blog/add.jpg" alt=""></a>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single_sidebar_widget post_category_widget">
-                        <h4 class="widget_title">Post Catgories</h4>
-                        <ul class="list cat-list">
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Technology</p>
-                                    <p>37</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Lifestyle</p>
-                                    <p>24</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Fashion</p>
-                                    <p>59</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Art</p>
-                                    <p>29</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Food</p>
-                                    <p>15</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Architecture</p>
-                                    <p>09</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex justify-content-between">
-                                    <p>Adventure</p>
-                                    <p>44</p>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single-sidebar-widget newsletter_widget">
-                        <h4 class="widget_title">Newsletter</h4>
-                        <p>
-                            Here, I focus on a range of items and features that we use in life without
-                            giving them a second thought.
-                        </p>
-                        <div class="form-group d-flex flex-row">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <div class="input-group-text"><i class="fa fa-envelope" aria-hidden="true"></i></div>
-                                </div>
-                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'">
-                            </div>
-                            <a href="#" class="bbtns">Subscribe</a>
-                        </div>
-                        <p class="text-bottom">You can unsubscribe at any time</p>
-                        <div class="br"></div>
-                    </aside>
-                    <aside class="single-sidebar-widget tag_cloud_widget">
-                        <h4 class="widget_title">Tag Clouds</h4>
-                        <ul class="list">
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Architecture</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Food</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Art</a></li>
-                            <li><a href="#">Adventure</a></li>
-                            <li><a href="#">Food</a></li>
-                            <li><a href="#">Lifestyle</a></li>
-                            <li><a href="#">Adventure</a></li>
-                        </ul>
-                    </aside>
-                </div>
+                <x-blog_right_sidebar/>
             </div>
         </div>
     </div>
@@ -371,84 +221,6 @@
 <!--================Blog Area =================-->
 
 <!-- Footer Area Starts -->
-<footer class="footer-area">
-    <div class="footer-widget section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-widget single-widget1">
-                        <a href="index.html"><img src="assets/images/logo/logo2.png" alt=""></a>
-                        <p class="mt-3">Which morning fourth great won't is to fly bearing man. Called unto shall seed, deep, herb set seed land divide after over first creeping. First creature set upon stars deep male gathered said she'd an image spirit our</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-widget single-widget2 my-5 my-md-0">
-                        <h5 class="mb-4">contact us</h5>
-                        <div class="d-flex">
-                            <div class="into-icon">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                            <div class="info-text">
-                                <p>1234 Some St San Francisco, CA 94102, US 1.800.123.4567 </p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="into-icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
-                            <div class="info-text">
-                                <p>(123) 456 78 90</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="into-icon">
-                                <i class="fa fa-envelope-o"></i>
-                            </div>
-                            <div class="info-text">
-                                <p>support@axiomthemes.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-widget single-widget3">
-                        <h5 class="mb-4">opening hours</h5>
-                        <p>Monday ...................... Closed</p>
-                        <p>Tue-Fri .............. 10 am - 12 pm</p>
-                        <p>Sat-Sun ............... 8 am - 11 pm</p>
-                        <p>Holidays ............. 10 am - 12 pm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-6">
-                    <span>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </span>
-                </div>
-                <div class="col-lg-5 col-md-6">
-                    <div class="social-icons">
-                        <ul>
-                            <li class="no-margin">Follow Us</li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
 <!-- Footer Area End -->
 @stop()

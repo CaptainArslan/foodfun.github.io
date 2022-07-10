@@ -1,12 +1,13 @@
 <div>
-    <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
-    <footer class="footer-area">
-        <div class="footer-widget footer-widget2 section-padding">
+    <!-- Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less. - Marie Curie -->
+ <!-- Footer Area Starts -->
+ <footer class="footer-area">
+        <div class="footer-widget section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="single-widget single-widget1">
-                            <a href="index.html"><img src="{{asset('/images/logo/logo.png')}}" alt=""></a>
+                            <a href="{{url('index')}}"><img src="{{asset('/images/logo/logo2.png')}}" alt=""></a>
                             <p class="mt-3">Which morning fourth great won't is to fly bearing man. Called unto shall seed, deep, herb set seed land divide after over first creeping. First creature set upon stars deep male gathered said she'd an image spirit our</p>
                         </div>
                     </div>
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-        <div class="footer-copyright footer-copyright2">
+        <div class="footer-copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-6">
