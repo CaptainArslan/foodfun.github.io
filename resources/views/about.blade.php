@@ -39,4 +39,5 @@
 <!-- Footer component Starts -->
 <x-footer/>
 <!-- Footer component End -->
+
 @stop()

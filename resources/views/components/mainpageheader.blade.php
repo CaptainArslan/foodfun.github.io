@@ -26,6 +26,8 @@
                                 </ul> -->
                             </li>
                             <li><a href="{{url('/contact-us')}}">contact</a></li>
+                            <li data-toggle="modal" data-target="#exampleModalCenter"><a href="#">Register</a></li>
+                            <li data-toggle="modal" data-target="#exampleModalCenter"><a href="#">Login</a></li>
                             <!-- <li><a href="elements.html">Elements</a></li> -->
                         </ul>
                     </div>
