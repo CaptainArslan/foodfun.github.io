@@ -25,7 +25,7 @@
 <body>
     @section('body-content');
     @show
-
+<!-- test -->
     <!-- Javascript -->
     <script src="{{asset('/js/vendor/jquery-2.2.4.min.js')}}"></script>
     <script src="{{asset('/js/vendor/bootstrap-4.1.3.min.js')}}"></script>
