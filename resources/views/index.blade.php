@@ -23,6 +23,7 @@
     </div>
 </section>
 <!-- Banner Area End -->
+<!--  -->
 
 <!-- Welcome Book a table Component Starts -->
 <x-bookatable :data="$dishes" />
