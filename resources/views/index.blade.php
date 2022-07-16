@@ -23,7 +23,6 @@
     </div>
 </section>
 <!-- Banner Area End -->
-<!--  -->
 
 <!-- Welcome Book a table Component Starts -->
 <x-bookatable :data="$dishes" />
@@ -70,10 +69,8 @@
 
 <!-- Update Food Component Starts -->
 <x-updatedfood :updated="$updated_dishes" />
-<!-- Update Food Component End -->
-
-<!-- Table Area Starts -->
-<section class="table-area section-padding">
+/>
+class="table-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
