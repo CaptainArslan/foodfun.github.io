@@ -69,8 +69,10 @@
 
 <!-- Update Food Component Starts -->
 <x-updatedfood :updated="$updated_dishes" />
-/>
-class="table-area section-padding">
+<!-- Update Food Component Ends -->
+
+<!-- Book a table start -->
+<section class="table-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -109,7 +111,7 @@ class="table-area section-padding">
         </div>
     </div>
 </section>
-<!-- Table Area End -->
+<!-- Book a Table Area End -->
 
 <!-- Footer Component Starts -->
 <x-mainpagefooter />
