@@ -6,14 +6,17 @@ use Illuminate\View\Component;
 
 class ourdishes extends Component
 {
+    public $dish;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+   
+    public function __construct($dish)
     {
         //
+        $this->dish = $dish;
     }
 
     /**

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,8 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return view('index'); });
-Route::get('/index', function () { return view('index'); });
+Route::get('/', [MainController::class, 'index']);
+Route::get('/index', [MainController::class, 'index']);
+// Route::get('/index', function () { return view('index'); });
 
 Route::get('/blog-details', function () { return view('blog-details'); });
 Route::get('/blog', function () { return view('blog-home'); });
