@@ -14,12 +14,18 @@ use App\Http\Controllers\MainController;
 |
 */
 
+Route::get('/welcome', function ()
+{
+   return view('welcome');
+});
+
 Route::get('/', [MainController::class, 'index']);
 Route::get('/index', [MainController::class, 'index']);
+// Route::get('/index', [MainController::class, 'blog_details']);
 // Route::get('/index', function () { return view('index'); });
 
-Route::get('/blog-details', function () { return view('blog-details'); });
-Route::get('/blog', function () { return view('blog-home'); });
-Route::get('/contact-us', function () { return view('contact-us'); });
-Route::get('/menu', function () { return view('menu'); });
-Route::get('/about', function () { return view('about'); });
+Route::get('/blog-details', [MainController::class, 'blog_details']);
+Route::get('/blog', [MainController::class, 'blog']);
+Route::get('/contact-us', [MainController::class, 'contact_us']);
+Route::get('/menu', [MainController::class, 'menu']);
+Route::get('/about', [MainController::class, 'about']);

@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title',"Home Food Fun")
+@section('title',"Contact | Food Fun")
 @section('body-content')
 <!-- Preloader Starts -->
 <!-- <div class="preloader">

@@ -25,34 +25,11 @@
 <!-- Banner Area End -->
 
 <!-- Welcome Book a table Component Starts -->
-<x-bookatable :data="$dishes" />
+<x-bookatable/>
 <!-- Welcome Book a table Component End -->
 
 <!-- Food Component starts -->
-@if(sizeof($dishes) > 0)
-<section class="food-area section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="section-top">
-                    <h3><span class="style-change">we serve</span> <br>delicious food</h3>
-                    <p class="pt-3">They're fill divide i their yielding our after have him fish on there for greater man moveth, moved Won't together isn't for fly divide mids fish firmament on net.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            @foreach($dishes as $dish)
-            <x-ourdishes :dish="$dish" />
-            @endforeach
-        </div>
-    </div>
-</section>
-@else
-<center>
-    <h3><span class="style-change">No Dish Found</span></h3>
-</center>
-@endif
-
+<x-ourdishes :dish="$dishes" />
 <!-- Food Component End -->
 
 <!-- Reservation Comonent Starts -->

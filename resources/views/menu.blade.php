@@ -1,5 +1,5 @@
 @extends('layout.app')
-@section('title',"Home Food Fun")
+@section('title',"Menu |  Food Fun")
 @section('body-content')
 <!-- Preloader Starts -->
 <!-- <div class="preloader">
@@ -25,7 +25,7 @@
 <!-- Banner Area End -->
 
 <!-- Food Area starts -->
-<x-ourdishes/>
+<x-ourdishes :dish="$dishes" />
 <!-- Food Area End -->
 
 <!-- Table Area Starts -->
