@@ -7,18 +7,14 @@ use App\Models\MainModel;
 
 class MainController extends Controller
 {
-    //
-    // public function index()
-    // {
-    //     $dished = ['dishes' => get_dishes()];
-    //     $updated_dishes = ['updated_dishes' => updated_dishes()];
-    //     return view('index', $dished, $updated_dishes);
-    // }
+
     public function index()
     {
-        $dished = ['dishes' => get_dishes()];
+        $dishes = ['dishes' => get_dishes()];
         $updated_dishes = ['updated_dishes' => updated_dishes()];
-        return view('index', $dished, $updated_dishes);
+        $customer_review = ['customer_review' => customer_review()];
+        // dd($customer_review);
+        return view('index', $dishes, $updated_dishes, $customer_review);
     }
 
     /**
@@ -26,9 +22,9 @@ class MainController extends Controller
     */
     public function blog_details()
     {
-        $dished = ['dishes' => get_dishes()];
+        $dishes = ['dishes' => get_dishes()];
         $updated_dishes = ['updated_dishes' => updated_dishes()];
-        return view('blog-details', $dished, $updated_dishes);
+        return view('blog-details', $dishes, $updated_dishes);
     }
 
     public function blog()
@@ -38,22 +34,18 @@ class MainController extends Controller
 
     public function contact_us()
     {
-        // $dished = ['dishes' => get_dishes()];
-        // $updated_dishes = ['updated_dishes' => updated_dishes()];
         return view('contact-us');
     }
 
     public function menu()
     {
-        $dished = ['dishes' => get_dishes()];
+        $dishes = ['dishes' => get_dishes()];
         $updated_dishes = ['updated_dishes' => updated_dishes()];
-        return view('menu', $dished, $updated_dishes);
+        return view('menu', $dishes, $updated_dishes);
     }
 
     public function about()
     {
-        // $dished = ['dishes' => get_dishes()];
-        // $updated_dishes = ['updated_dishes' => updated_dishes()];
         return view('about');
     }
    

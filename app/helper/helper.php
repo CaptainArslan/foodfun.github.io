@@ -25,4 +25,11 @@ use Illuminate\Support\Facades\DB;
         $dishes = DB::select("SELECT * FROM dishes where type='S'");
         return $dishes;
     }
+
+    function customer_review()
+    {
+        $testimonial = DB::select("SELECT * FROM `testimonial`");
+        return $testimonial;
+    }
+    
 ?>

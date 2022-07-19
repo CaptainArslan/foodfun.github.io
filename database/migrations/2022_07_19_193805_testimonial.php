@@ -13,20 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        //
-        /**
-         * Table for Dishes 
-         */
-        Schema::create('dishes', function (Blueprint $table) {
+        Schema::create('testimonial', function (Blueprint $table) {
             $table->id();
+            $table->integer('userid');
             $table->string('name');
-            $table->string('code')->unique();
-            $table->string('tagline')->nullable();
-            $table->string('description', '500')->nullable();
-            $table->integer('price');
-            $table->string('image');
+            $table->string('userimage')->nullable();
+            //the following field is for the Customer or admin
             $table->string('type')->nullable();
-            $table->string('special_tagline')->nullable();
+            $table->string('description');
             $table->timestamps();
         });
     }
@@ -39,6 +33,6 @@ return new class extends Migration
     public function down()
     {
         //
-        Schema::dropIfExists('dishes');
+        Schema::dropIfExists('testimonial');
     }
 };

@@ -21,7 +21,7 @@
                             <div class="food-content">
                                 <div class="d-flex justify-content-between">
                                     <h5>{{$row->name}}</h5>
-                                    <span class="style-change">{{$row->price}}</span>
+                                    <span class="style-change">${{$row->price}}</span>
                                 </div>
                                 <p class="pt-3">{{$row->description}}</p>
                             </div>

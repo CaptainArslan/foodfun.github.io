@@ -25,7 +25,7 @@
 <!-- Banner Area End -->
 
 <!-- Welcome Book a table Component Starts -->
-<x-bookatable/>
+<x-bookatable />
 <!-- Welcome Book a table Component End -->
 
 <!-- Food Component starts -->
@@ -41,7 +41,7 @@
 <!-- Special Deshes Component End -->
 
 <!-- Testimonial Component Starts -->
-<x-testimonial />
+<x-testimonial  />
 <!-- Testimonial Component End -->
 
 <!-- Update Food Component Starts -->
