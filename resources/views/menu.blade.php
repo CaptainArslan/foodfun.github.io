@@ -25,6 +25,9 @@
 <!-- Banner Area End -->
 
 <!-- Food Area starts -->
+@php 
+    $dishes = get_dishes();
+@endphp
 <x-ourdishes :dish="$dishes" />
 <!-- Food Area End -->
 

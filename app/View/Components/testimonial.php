@@ -6,10 +6,11 @@ use Illuminate\View\Component;
 
 class testimonial extends Component
 {
-   
-    public function __construct()
+    public $testimonial;
+    public function __construct($testimonial)
     {
         //
+        $this->testimonial = $testimonial;
     }
 
     /**

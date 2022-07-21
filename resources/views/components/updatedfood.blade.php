@@ -16,7 +16,7 @@
                 <div class="col-md-4">
                     <div class="single-food">
                         <div class="food-img">
-                            <img src="{{asset('/images/'.$row->image)}}" class="img-fluid" alt="">
+                            <img src="{{asset('/images/'.$row->foodimage)}}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="post-admin d-lg-flex mb-3">

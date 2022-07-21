@@ -1,10 +1,7 @@
 @extends('layout.app')
 @section('title',"About Food Fun")
 @section('body-content')
-<!-- Preloader Starts -->
-<!-- <div class="preloader">
-        <div class="spinner"></div>
-    </div> -->
+
 <!-- Preloader End -->
 
 <!-- Header Area Starts -->
@@ -25,19 +22,22 @@
 <!-- Banner Area End -->
 
 <!-- Welcome Area Starts -->
-<x-bookatable/>
+<x-bookatable />
 <!-- Welcome Area End -->
 
 <!-- Speccial Dishes Component Starts -->
-<x-specialdishes/>
+<x-specialdishes />
 <!-- Speccial Dishes Component End -->
 
 <!-- Testimonial Component Starts -->
-<x-testimonial/>
+@php
+$testimonial = testimonial();
+@endphp
+<x-testimonial :testimonial="$testimonial"/>
 <!-- Testimonial Component End -->
 
 <!-- Footer component Starts -->
-<x-footer/>
+<x-footer />
 <!-- Footer component End -->
 
 @stop()

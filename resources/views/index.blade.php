@@ -2,9 +2,11 @@
 @section('title',"Home Food Fun")
 @section('body-content')
 
-<!-- <pre>
-{{print_r($dishes)}}
-</pre> -->
+@php 
+    $dishes = get_dishes();
+    $updated_dishes = updated_dishes();
+    $testimonial = testimonial();
+@endphp
 <!-- Header Component Starts -->
 <x-mainpageheader />
 <!-- Header Component End -->
@@ -41,7 +43,7 @@
 <!-- Special Deshes Component End -->
 
 <!-- Testimonial Component Starts -->
-<x-testimonial  />
+<x-testimonial :testimonial="$testimonial"/>
 <!-- Testimonial Component End -->
 
 <!-- Update Food Component Starts -->

@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('tagline')->nullable();
             $table->string('description', '500')->nullable();
             $table->integer('price');
-            $table->string('image');
+            $table->string('foodimage');
             $table->string('type')->nullable();
             $table->string('special_tagline')->nullable();
             $table->timestamps();

@@ -13,20 +13,20 @@
             </div>
             <div class="row">
                 @foreach($dish as $row)
-                    <div class="col-md-4 col-sm-6">
-                        <div class="single-food">
-                            <div class="food-img">
-                                <img src="{{asset('/images/'.$row->image)}}" class="img-fluid" alt="">
+                <div class="col-md-4 col-sm-6">
+                    <div class="single-food mt-5">
+                        <div class="food-img">
+                            <img src="{{asset('/images/'.$row->foodimage)}}" class="img-fluid" alt="">
+                        </div>
+                        <div class="food-content">
+                            <div class="d-flex justify-content-between">
+                                <h5>{{$row->name}}</h5>
+                                <span class="style-change">${{$row->price}}</span>
                             </div>
-                            <div class="food-content">
-                                <div class="d-flex justify-content-between">
-                                    <h5>{{$row->name}}</h5>
-                                    <span class="style-change">${{$row->price}}</span>
-                                </div>
-                                <p class="pt-3">{{$row->description}}</p>
-                            </div>
+                            <p class="pt-3">{{$row->description}}</p>
                         </div>
                     </div>
+                </div>
                 @endforeach
             </div>
         </div>

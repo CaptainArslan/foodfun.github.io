@@ -9,7 +9,7 @@
 
 <!-- Header Area Starts -->
 
-<x-header/>
+<x-header />
 <!-- Header Area End -->
 
 <!-- Banner Area Starts -->
@@ -171,6 +171,6 @@
         </div>
     </div>
 </footer>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I"></script>
 <!-- Footer Area End -->
-
 @stop()
