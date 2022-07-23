@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\DB;
+use App\Models\Dishes;
 
     function print_data($array)
     {
@@ -11,8 +12,11 @@ use Illuminate\Support\Facades\DB;
         echo "</pre></div>";
     }
 
-    function get_dishes(){
-        $dishes = DB::select("SELECT * FROM dishes");
+    function get_dishes()
+    {
+        // $dishes = Dishes::all()->take(6);
+        // $dishes = Dishes::all()->where('deleted_at', '=', '');
+        $dishes = Dishes::all();
         return $dishes;
     }
 
@@ -24,7 +28,8 @@ use Illuminate\Support\Facades\DB;
 
     function special_dishes()
     {
-        $dishes = DB::select("SELECT * FROM dishes where type='S'");
+        // $dishes = DB::select("SELECT * FROM dishes where type='S'");
+        $dishes = Dishes::where('type', 'S');
         return $dishes;
     }
 
