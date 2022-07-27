@@ -42,7 +42,7 @@ CREATE TABLE `testimonial` (
 -- Dumping data for table `testimonial`
 --
 
-INSERT INTO `testimonial` (`id`, `userid`, `name`, `userimage`, `type`, `description`, `created_at`, `updated_at`) VALUES
+INSERT INTO `testimonial` (`id`, `user_id`, `name`, `userimage`, `type`, `description`, `created_at`, `updated_at`) VALUES
 (1, 1, 'adam nahan', 'customer1.png', 'Chief Customer', 'You\'re had. Subdue grass Meat us winged years you\'ll doesn\'t. fruit two also won one yielding creepeth third give may never lie alternet food.', '2022-07-14 11:06:09', NULL),
 (2, 2, 'adam nahan', 'customer2.png', 'Chief Customer', 'You\'re had. Subdue grass Meat us winged years you\'ll doesn\'t. fruit two also won one yielding creepeth third give may never lie alternet food.', '2022-07-14 11:06:09', NULL),
 (3, 3, 'adam nahan', 'customer1.png', 'Chief Customer', 'You\'re had. Subdue grass Meat us winged years you\'ll doesn\'t. fruit two also won one yielding creepeth third give may never lie alternet food.', '2022-07-14 11:06:09', NULL),

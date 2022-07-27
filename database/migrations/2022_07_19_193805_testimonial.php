@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('testimonial', function (Blueprint $table) {
             $table->id();
-            $table->integer('userid');
+            $table->integer('user_id');
             $table->string('name');
             $table->string('userimage')->nullable();
             //the following field is for the Customer or admin

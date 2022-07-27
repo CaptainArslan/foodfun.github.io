@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::table('dishes', function (Blueprint $table) {
             //
-            $table->integer('userid')->unsigned();
+            $table->integer('user_id')->unsigned();
         });
     }
 
@@ -28,7 +28,7 @@ return new class extends Migration
     {
         Schema::table('dishes', function (Blueprint $table) {
             //
-            $table->dropColumn('userid');
+            $table->dropColumn('user_id');
         });
     }
 };

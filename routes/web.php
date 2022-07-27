@@ -5,6 +5,7 @@ use App\Models\Dishes;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Models\Role;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,11 +48,17 @@ Route::get('/about', [MainController::class, 'about']);
 // });
 
 
-// Route::get('/create', function(){
-//    User::create([
-//       'name' => 'Arslan',
-//       'email' => 'arslan@gmail.com',
-//       'password' => Hash::make(12345678),
+Route::get('/create', function(){
+   User::create([
+      'name' => 'Arslan',
+      'email' => 'arslan@gmail.com',
+      'password' => Hash::make(12345678),
+   ]);
+});
+
+// Route::get('/createrole', function(){
+//    Role::create([
+//       'name' => 'Subscriber',
 //    ]);
 // });
 
@@ -82,4 +89,11 @@ Route::get('user/{id}/dish',function($id){
    # code...
 
    return User::find($id)->userdish;
+});
+
+
+Route::get('user/{id}/role',function($id){
+   # code...
+
+   return User::find($id)->roles()->orderby('id', 'DESC')->get();
 });
