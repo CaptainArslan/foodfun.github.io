@@ -21,7 +21,6 @@ use App\Models\Role;
 Route::get('/welcome', function () {
    return view('welcome');
 });
-
 Route::get('/', [MainController::class, 'index']);
 Route::get('/index', [MainController::class, 'index']);
 Route::get('/blog-details', [MainController::class, 'blog_details']);
@@ -29,6 +28,8 @@ Route::get('/blog', [MainController::class, 'blog']);
 Route::get('/contact-us', [MainController::class, 'contact_us']);
 Route::get('/menu', [MainController::class, 'menu']);
 Route::get('/about', [MainController::class, 'about']);
+
+
 
 //-------------------------
 //       Eloquent ORM
@@ -48,13 +49,14 @@ Route::get('/about', [MainController::class, 'about']);
 // });
 
 
-Route::get('/create', function(){
-   User::create([
-      'name' => 'Arslan',
-      'email' => 'arslan@gmail.com',
-      'password' => Hash::make(12345678),
-   ]);
-});
+// Route::get('/create', function(){
+//    User::create([
+//       'name' => 'Arslan',
+//       'email' => 'arslan@gmail.com',
+//       'password' => Hash::make(12345678),
+//    ]);
+// });
+
 
 // Route::get('/createrole', function(){
 //    Role::create([
@@ -85,15 +87,13 @@ Route::get('/create', function(){
 //    return $dish;
 // });
 
-Route::get('user/{id}/dish',function($id){
-   # code...
+// Route::get('user/{id}/dish',function($id){
+//    # code...
+//    return User::find($id)->userdish;
+// });
 
-   return User::find($id)->userdish;
-});
 
-
-Route::get('user/{id}/role',function($id){
-   # code...
-
-   return User::find($id)->roles()->orderby('id', 'DESC')->get();
-});
+// Route::get('user/{id}/role',function($id){
+//    # code...
+//    return User::find($id)->roles()->orderby('id', 'DESC')->get();
+// });
