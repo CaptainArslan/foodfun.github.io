@@ -4,15 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class updatedfood extends Component
+class dish extends Component
 {
-
-    
-    public $updated;
-    public function __construct($updated)
+    /**
+     * Create a new component instance.
+     *
+     * @return void
+     */
+    public function __construct()
     {
         //
-        $this->updated = $updated;
     }
 
     /**
@@ -22,6 +23,6 @@ class updatedfood extends Component
      */
     public function render()
     {
-        return view('components.updatedfood');
+        return view('components.dish');
     }
 }

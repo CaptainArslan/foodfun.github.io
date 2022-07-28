@@ -2,6 +2,11 @@
 @section('title',"Home Food Fun")
 @section('body-content')
 
+@php 
+    $dishes = get_dishes();
+    $updated_dishes = updated_dishes();
+    $testimonial = testimonial();
+@endphp
 <!-- Header Component Starts -->
 <x-mainpageheader />
 <!-- Header Component End -->
@@ -26,7 +31,7 @@
 <!-- Welcome Book a table Component End -->
 
 <!-- Food Component starts -->
-<x-ourdishes />
+<x-ourdishes :dish="$dishes" />
 <!-- Food Component End -->
 
 <!-- Reservation Comonent Starts -->
@@ -38,14 +43,14 @@
 <!-- Special Deshes Component End -->
 
 <!-- Testimonial Component Starts -->
-<x-testimonial />
+<x-testimonial :testimonial="$testimonial"/>
 <!-- Testimonial Component End -->
 
 <!-- Update Food Component Starts -->
-<x-updatedfood />
-<!-- Update Food Component End -->
+<x-updatedfood :updated="$updated_dishes" />
+<!-- Update Food Component Ends -->
 
-<!-- Table Area Starts -->
+<!-- Book a table start -->
 <section class="table-area section-padding">
     <div class="container">
         <div class="row">
@@ -85,7 +90,7 @@
         </div>
     </div>
 </section>
-<!-- Table Area End -->
+<!-- Book a Table Area End -->
 
 <!-- Footer Component Starts -->
 <x-mainpagefooter />

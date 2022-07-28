@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\Dishes;
+use App\Models\Role;
 
 class User extends Authenticatable
 {
@@ -41,4 +44,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function userdish()
+    {
+        return $this->hasOne('App\Models\Dishes');
+    }
+
+    public function userdishes()
+    {
+        return $this->hasMany('App\Models\Dishes');
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany('App\Models\Role');
+    }
 }

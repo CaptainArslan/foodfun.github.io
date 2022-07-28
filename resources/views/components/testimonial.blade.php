@@ -1,3 +1,4 @@
+@if(sizeof($testimonial) > 0)
 <div>
     <!-- Because you are alive, everything is possible. - Thich Nhat Hanh -->
     <section class="testimonial-area section-padding4">
@@ -13,39 +14,26 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="testimonial-slider owl-carousel">
+                        @foreach($testimonial as $row)
                         <div class="single-slide d-sm-flex">
                             <div class="customer-img mr-4 mb-4 mb-sm-0">
-                                <img src="{{asset('/images/customer1.png')}}" alt="">
+                                <img src="{{asset('/images/'.$row->userimage)}}" alt="">
                             </div>
                             <div class="customer-text">
-                                <h5>adame nesane</h5>
-                                <span><i>Chief Customer</i></span>
-                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
+                                <h5>{{$row->name}}</h5>
+                                <span><i>{{$row->type}}</i></span>
+                                <p class="pt-3">{{$row->description}}</p>
                             </div>
                         </div>
-                        <div class="single-slide d-sm-flex">
-                            <div class="customer-img mr-4 mb-4 mb-sm-0">
-                                <img src="{{asset('/images/customer2.png')}}" alt="">
-                            </div>
-                            <div class="customer-text">
-                                <h5>adam nahan</h5>
-                                <span><i>Chief Customer</i></span>
-                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
-                            </div>
-                        </div>
-                        <div class="single-slide d-sm-flex">
-                            <div class="customer-img mr-4 mb-4 mb-sm-0">
-                                <img src="{{asset('/images/customer1.png')}}" alt="">
-                            </div>
-                            <div class="customer-text">
-                                <h5>adame nesane</h5>
-                                <span><i>Chief Customer</i></span>
-                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </div>
+@else
+<center>
+    <h3><span class="style-change">No Testimonial Found</span></h3>
+</center>
+@endif
